@@ -81,8 +81,8 @@ canvas {
   }
 
   #logo {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .header {
@@ -106,4 +106,5 @@ canvas {
   position: fixed;
   width: 100%;
   z-index: +1;
+
 }
