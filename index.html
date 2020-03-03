@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
     <title>OneMindIndia</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -11,22 +11,66 @@
 </head>
 
 <body>
-    <section id="particles-js">
-        1
-    </section>
-    <section style="height: 100vh; background-color: chartreuse;">
-        2
-    </section>
-    <section style="height: 100vh; background-color: darkcyan;">
-        3
-    </section>
-    <section style="height: 100vh; background-color: darkgreen;">
-        4
-    </section>
-    <section style="height: 100vh; background-color: gold;">
-        5
-    </section>
+    <header style="position: fixed; width: 100%; top: 0px; z-index: +1;">
+
+    </header>
+    <div class="main" style="position: relative; height: 100vh;">
+        <div class="listclass" style="position: fixed; z-index: +1; top: 50%;right: 1.5rem;">
+            <ul class="page-navigation">
+                <li class="btn" onclick="gotoPage(0)"></li>
+                <li class="btn" onclick="gotoPage(1)"></li>
+                <li class="btn" onclick="gotoPage(2)"></li>
+            </ul>
+        </div>
+
+        <section class="section1" id="particles-js">
+            <div class="content">
+                <p>
+                    One Mind India’s is building civic data governance platform. We envision this to
+                    be a potential tool for catalysing greater transparency, equity and democracy.
+                </p>
+                <p>
+                    We expect this to set the benchmark for governance by date and used by elected
+                    representatives.
+                </p>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="content">
+                <p>
+                    One Mind India’s is in stealth mode and has attracted people from deep
+                    technical knowledge in building scalable computing system and building usable
+                    products.
+                </p>
+                <p>
+                    The core team consists of Data Scientist, Technical Architect, Full Stack
+                    Developers, UI//UX Designers and Product Engineers.
+                </p>
+                <p>
+                    We’re fully funded and have a long term view of building a platform that will
+                    have larger societal impact.
+                </p>
+                <p>
+                    If data, governance and impacting social change interests you, please write to
+                    us and we can have conversation.
+                </p>
+                <p>One@onemindindia.com</p>
+            </div>
+
+        </section>
+        <section class="section3">
+            <div class="content">
+                <h2>CONTACT</h2>
+                <p>4/363, Block C, 3 rd Floor,</p>
+                <p>OMR Road, Kandanchavadi,</p>
+                <p>Chennai 600 096</p>
+            </div>
+
+        </section>
+
+    </div>
+
 </body>
 
 </html>
-<script src="index.js"></script>
+<script src=" index.js"></script>

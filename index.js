@@ -108,3 +108,16 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
+
+const sections = document.querySelectorAll("section")
+let index = 0;
+function gotoPage(pageNum) {
+    console.log(pageNum);
+    index = pageNum;
+    console.log(index);
+    sections.forEach((section, i) => {
+        if (i === pageNum) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    })
+}
