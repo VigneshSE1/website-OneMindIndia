@@ -121,3 +121,34 @@ function gotoPage(pageNum) {
         }
     })
 }
+
+document.onkeydown = function (event) {
+    switch (event.keyCode) {
+        case 37:
+            if (index == 0)
+                break;
+            index--;
+            gotoPage(index);
+            break;
+        case 38:
+            if (index == 0)
+                break;
+            index--;
+            gotoPage(index);
+            break;
+        case 39:
+            if (index == 2)
+                break;
+            index++;
+            gotoPage(index);
+            break;
+        case 40:
+            if (index == 2)
+                break;
+            index++;
+            gotoPage(index);
+            break;
+        default:
+            break;
+    }
+};

@@ -1,6 +1,9 @@
 body {
   margin: 0;
   overflow: hidden;
+  /* overflow: scroll;
+  overflow-x: hidden; */
+
 }
 
 canvas {
@@ -15,6 +18,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+
 }
 
 .page-navigation {
@@ -40,8 +44,9 @@ canvas {
 
 .section2 {
   height: 100vh;
-  background-image: linear-gradient(to right, #93a5cf, #e4efe9);
+  background-image: linear-gradient(to right, #a3bded, #6991c7);
   position: relative;
+
 
 }
 
@@ -49,6 +54,7 @@ canvas {
   height: 100vh;
   background-image: linear-gradient(to top, #48c6ef, #6f86d6);
   position: relative;
+
 }
 
 .content {
@@ -81,8 +87,8 @@ canvas {
   }
 
   #logo {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .header {
@@ -106,4 +112,8 @@ canvas {
   position: fixed;
   width: 100%;
   z-index: +1;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
