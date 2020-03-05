@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
     <title>OneMindIndia</title>
@@ -9,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="three.r95.min.js"></script>
+    <script src="vanta.dots.min.js"></script>
 
 
 </head>
@@ -38,7 +41,7 @@
                 </p>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="vantajs">
             <div class="content">
                 <p>
                     One Mind India’s is in stealth mode and has attracted people from deep
@@ -77,3 +80,20 @@
 
 </html>
 <script src=" index.js"></script>
+<script>
+    VANTA.DOTS({
+        el: "#vantajs",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0,
+        color2: 0xac9f93,
+        backgroundColor: 0xa6a2eb,
+        size: 5.30,
+        spacing: 28.00
+
+    })  
+</script>
