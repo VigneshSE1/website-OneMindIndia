@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  overflow: hidden;
-  /* overflow: scroll;
-  overflow-x: hidden; */
+  /* overflow: hidden; */
+  overflow: scroll;
+  overflow-x: hidden;
 
 }
 
@@ -48,6 +48,7 @@ canvas {
   position: relative;
 
 
+
 }
 
 .section3 {
@@ -79,6 +80,9 @@ canvas {
     height: 150px;
   }
 
+  #menubar {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
