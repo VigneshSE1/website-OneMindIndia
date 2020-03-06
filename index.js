@@ -329,49 +329,7 @@ particlesJS("particles-js3", {
     "retina_detect": true
 });
 
-// const sections = document.querySelectorAll("section")
-// let index = 0;
-// function gotoPage(pageNum) {
-//     console.log(pageNum);
-//     index = pageNum;
-//     console.log(index);
-//     sections.forEach((section, i) => {
-//         if (i === pageNum) {
-//             section.scrollIntoView({ behavior: "smooth" })
-//         }
-//     })
-// }
 
-// document.onkeydown = function (event) {
-//     switch (event.keyCode) {
-//         case 37:
-//             if (index == 0)
-//                 break;
-//             index--;
-//             gotoPage(index);
-//             break;
-//         case 38:
-//             if (index == 0)
-//                 break;
-//             index--;
-//             gotoPage(index);
-//             break;
-//         case 39:
-//             if (index == 2)
-//                 break;
-//             index++;
-//             gotoPage(index);
-//             break;
-//         case 40:
-//             if (index == 2)
-//                 break;
-//             index++;
-//             gotoPage(index);
-//             break;
-//         default:
-//             break;
-//     }
-// };
 
 $(".main").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
