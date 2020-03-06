@@ -19,28 +19,43 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html"><img id="logo" src="Logo_One_Mind.svg" alt="OMI"></a>
-        <a href=""><img src="iconfinder_menu-alt_134216.png" alt=""
-                style="float: right; margin-right: 50px; width: 30px; height: 30px; margin-top: 100px;"></a>
+    <header class="header" id="header">
+        <a href="index.html" style="margin-top: 10px; margin-left: 20px;"><img id="logo" src="Untitled (2).svg"
+                alt="OMI"></a>
+        <span><img src="list.svg" alt="" id="menubar" width="40" height="40"
+                style="margin-top: 1rem;float: right; margin-right: 50px; cursor: pointer;" onclick="openMenu()"></span>
     </header>
-    <div class="main">
+    <div class="menulist" id="menulist" style="width: 100%; height: 100vh; z-index:2;">
+        <a href="index.html" style="margin-top: 10px; margin-left: 20px;"><img id="logo" src="Untitled (2).svg"
+                alt="OMI"></a>
+        <span><img src="close.svg" alt="" id="closebar" width="35" height="35"
+                style="margin-top: 1rem;float: right; margin-right: 50px; cursor: pointer;"
+                onclick="closeMenu()"></span>
+        <ul style="list-style: none; width: 100%; text-align: center;">
+            <li style="padding: 40px;"><a href="index.html">Home</a></li>
+            <hr>
+            <li style="padding: 40px;"><a href="#">Team</a></li>
+            <hr>
+            <li style="padding: 40px;"><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main" id="main">
         <section class="section1" id="particles-js">
             <div class="content">
                 <p>
-                    One Mind India’s is building civic data governance platform. We envision this to
+                    One Mind India is building civic data governance platform. We envision this to
                     be a potential tool for catalysing greater transparency, equity and democracy.
                 </p>
                 <p>
-                    We expect this to set the benchmark for governance by date and used by elected
+                    We expect this system to set the benchmark for governance by data and used by elected
                     representatives.
                 </p>
             </div>
         </section>
-        <section class="section2" id="vantajs">
+        <section class="section2">
             <div class="content">
                 <p>
-                    One Mind India’s is in stealth mode and has attracted people from deep
+                    One Mind India is in stealth mode and has attracted people from deep
                     technical knowledge in building scalable computing system and building usable
                     products.
                 </p>
@@ -76,7 +91,7 @@
 
 </html>
 <script src=" index.js"></script>
-<script>
+<!-- <script>
     VANTA.DOTS({
         el: "#vantajs",
         mouseControls: true,
@@ -93,4 +108,22 @@
         showLines: false
 
     })  
+</script> -->
+<script>
+    function openMenu() {
+        var x = document.getElementById("main");
+        x.style.display = "none";
+        var z = document.getElementById("header");
+        z.style.display = "none";
+        var y = document.getElementById("menulist");
+        y.style.display = "block";
+    }
+    function closeMenu() {
+        var y = document.getElementById("menulist");
+        y.style.display = "none";
+        var z = document.getElementById("header");
+        z.style.display = "block";
+        var x = document.getElementById("main");
+        x.style.display = "block";
+    }
 </script>

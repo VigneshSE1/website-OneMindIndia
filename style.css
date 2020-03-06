@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  /* overflow: hidden; */
-  overflow: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
 
 }
 
@@ -76,13 +76,23 @@ canvas {
   }
 
   #logo {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 75px;
   }
 
   #menubar {
-    margin-top: 20px;
+    width: "28";
+    height: "28"
   }
+
+  #closebar {
+    width: "25";
+    height: "25"
+  }
+
+  /* #menubar {
+    margin-top: 20px;
+  } */
 }
 
 @media screen and (min-width: 1000px) {
@@ -91,13 +101,10 @@ canvas {
   }
 
   #logo {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 100px;
   }
 
-  .header {
-    top: -50px;
-  }
 }
 
 .main {
@@ -120,4 +127,18 @@ canvas {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+#menubar:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
+#menulist {
+  display: none;
+}
+
+#closebar:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
