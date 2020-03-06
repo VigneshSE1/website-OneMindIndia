@@ -34,9 +34,9 @@
         <ul style="list-style: none; width: 100%; text-align: center; font-family: 'Open Sans', sans-serif;">
             <li style="height: 25vh; " id="home_menu"><a href="index.html">Home</a></li>
 
-            <li style="height: 25vh;" id="team_menu" onclick="teamview()">Team</li>
+            <li style="height: 25vh;" id="team_menu" onclick="teamview()"><a href="#">Team</a> </li>
 
-            <li style="height: 25vh;" id="contact_menu">Contact</li>
+            <li style="height: 25vh;" id="contact_menu" onclick="contactview()"><a href="#">Contact</a> </li>
         </ul>
     </div>
     <div class="main" id="main">
@@ -74,7 +74,7 @@
             </div>
 
         </section>
-        <section class="section3">
+        <section class="section3" id="section3">
             <div class="content">
                 <h2>CONTACT</h2>
                 <p>4/363, Block C, 3 rd Floor,</p>
@@ -139,8 +139,14 @@
     // });
     function teamview() {
         closeMenu();
-
-        var target = document.getElementsByClassName("section2");
-        target.parentNode.scrollTop = target.offsetTop;
+        $('html, body').animate({
+            scrollTop: $("#particles-js2").offset().top
+        }, 0);
+    }
+    function contactview() {
+        closeMenu();
+        $('html, body').animate({
+            scrollTop: $("#section3").offset().top
+        }, 0);
     }
 </script>
