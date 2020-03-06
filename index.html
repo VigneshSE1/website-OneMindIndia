@@ -11,7 +11,7 @@
     <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="three.r95.min.js"></script>
-    <script src="vanta.dots.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
     <link href="onepage-scroll.css" rel="stylesheet" type="text/css">
 
@@ -31,12 +31,12 @@
         <span><img src="close.svg" alt="" id="closebar" width="35" height="35"
                 style="margin-top: 1rem;float: right; margin-right: 50px; cursor: pointer;"
                 onclick="closeMenu()"></span>
-        <ul style="list-style: none; width: 100%; text-align: center;">
-            <li style="padding: 40px;"><a href="index.html">Home</a></li>
-            <hr>
-            <li style="padding: 40px;"><a href="#">Team</a></li>
-            <hr>
-            <li style="padding: 40px;"><a href="">Contact</a></li>
+        <ul style="list-style: none; width: 100%; text-align: center; font-family: 'Open Sans', sans-serif;">
+            <li style="height: 25vh; " id="home_menu"><a href="index.html">Home</a></li>
+
+            <li style="height: 25vh;" id="team_menu" onclick="teamview()">Team</li>
+
+            <li style="height: 25vh;" id="contact_menu">Contact</li>
         </ul>
     </div>
     <div class="main" id="main">
@@ -52,24 +52,23 @@
                 </p>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="particles-js2">
             <div class="content">
                 <p>
-                    One Mind India is in stealth mode and has attracted people from deep
-                    technical knowledge in building scalable computing system and building usable
-                    products.
+                    One Mind India is currently under stealth mode and has attracted people with deep technical
+                    knowledge in building scalable computing system and building usable products.
                 </p>
                 <p>
-                    The core team consists of Data Scientist, Technical Architect, Full Stack
-                    Developers, UI/UX Designers and Product Engineers.
+                    The core team consists of Data Scientist, Technical Architect, Full Stack Developers, UI/UX
+                    Designers, Economist, Social Scientist and Product Engineers.
                 </p>
                 <p>
-                    We’re fully funded and have a long term view of building a platform that will
-                    have larger societal impact.
+                    We’re fully funded and have a long term view of building a platform that will have larger societal
+                    impact.
                 </p>
                 <p>
-                    If data, governance and impacting social change interests you, please write to
-                    us and we can have conversation.
+                    If data, governance and impacting social change interests you, please write to us and we can have a
+                    conversation.
                 </p>
                 <p> <a href="mailto:One@onemindindia.com"> One@onemindindia.com</a></p>
             </div>
@@ -111,12 +110,16 @@
 </script> -->
 <script>
     function openMenu() {
+
         var x = document.getElementById("main");
         x.style.display = "none";
         var z = document.getElementById("header");
         z.style.display = "none";
         var y = document.getElementById("menulist");
         y.style.display = "block";
+        // $("#home_menu").fadeIn(500);
+        // $("#team_menu").fadeIn("750");
+        // $("#contact_menu").fadeIn(1000);
     }
     function closeMenu() {
         var y = document.getElementById("menulist");
@@ -125,5 +128,19 @@
         z.style.display = "block";
         var x = document.getElementById("main");
         x.style.display = "block";
+        // $("#contact_menu").fadeOut(500);
+        // $("#team_menu").fadeOut(750);
+        // $("#home_menu").fadeOut(1000);
+    }
+    // $("button").click(function () {
+    //     $("#div1").fadeToggle();
+    //     $("#div2").fadeToggle("slow");
+    //     $("#div3").fadeToggle(3000);
+    // });
+    function teamview() {
+        closeMenu();
+
+        var target = document.getElementsByClassName("section2");
+        target.parentNode.scrollTop = target.offsetTop;
     }
 </script>
