@@ -347,3 +347,35 @@ $(".main").onepage_scroll({
     // the browser's width is less than 600, the fallback will kick in.
     direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
 });
+
+function openMenu() {
+
+    var x = document.getElementById("main");
+    x.style.display = "none";
+    var z = document.getElementById("header");
+    z.style.display = "none";
+    var y = document.getElementById("menulist");
+    y.style.display = "block";
+}
+function closeMenu() {
+    var y = document.getElementById("menulist");
+    y.style.display = "none";
+    var z = document.getElementById("header");
+    z.style.display = "block";
+    var x = document.getElementById("main");
+    x.style.display = "block";
+
+}
+
+function teamview() {
+    closeMenu();
+    $('html, body').animate({
+        scrollTop: $("#particles-js2").offset().top
+    }, 0);
+}
+function contactview() {
+    closeMenu();
+    $('html, body').animate({
+        scrollTop: $("#particles-js3").offset().top
+    }, 0);
+}
