@@ -369,13 +369,9 @@ function closeMenu() {
 
 function teamview() {
     closeMenu();
-    $('html, body').animate({
-        scrollTop: $("#particles-js2").offset().top
-    }, 0);
+    $(".main").moveTo(2)
 }
 function contactview() {
     closeMenu();
-    $('html, body').animate({
-        scrollTop: $("#particles-js3").offset().top
-    }, 0);
+    $(".main").moveTo(3)
 }

@@ -21,7 +21,12 @@ canvas {
 .page-navigation {
   list-style-type: none;
 }
-
+#menubar, #closebar {margin-top: 1rem;float: right; margin-right:1.5rem; cursor: pointer;}
+.menulist { width: 100%; height: 100vh; z-index:2; position:relative; background-color:#fff; }
+.menulist ul { padding:0; display:flex; flex-direction:column; background:#fff; margin-top:5vh; }
+.menulist ul li { padding:5vh 0; text-align:center; background:#fff; z-index:2; border-bottom:1px solid #e5e5e5; } 
+.menulist ul li a { text-decoration:none; color:#333; }
+.menulist ul li a:hover { text-decoration:underline; }
 .btn {
 
   cursor: pointer;
@@ -62,10 +67,11 @@ canvas {
   top: 50%;
   transform: translateY(-50%);
   color: white;
-  font-family: "Helvetica";
-  font-weight: bold;
+  font-family: "Helvetica", sans-serif;
 
 }
+
+.logo {margin-top: 10px; margin-left: 20px; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -78,20 +84,20 @@ canvas {
   }
 
   #menubar {
-    width: "28";
-    height: "28"
+    width: 28px;
+    height: 28px
   }
 
   #closebar {
-    width: "25";
-    height: "25"
+    width: 28px;
+    height: 28px
   }
 
 }
 
 @media screen and (min-width: 1000px) {
   html {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   #logo {
@@ -100,13 +106,13 @@ canvas {
   }
 
   #menubar {
-    width: "40";
-    height: "40"
+    width: 40px;
+    height: 40px
   }
 
   #closebar {
-    width: "35";
-    height: "35"
+    width: 35px;
+    height: 35px
   }
 
 }
